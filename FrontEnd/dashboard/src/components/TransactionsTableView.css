@@ -1,0 +1,81 @@
+.transaction-list {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.transaction-list h2 {
+  text-align: center;
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.transaction-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list th,
+.transaction-list td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.transaction-list th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.transaction-list td {
+  color: #666;
+}
+
+.transaction-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction-list tr:hover {
+  background-color: #eaf2ff;
+}
+
+.transaction-list .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.transaction-list .pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-list .pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.transaction-list .pagination button:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.transaction-list .pagination span {
+  font-weight: 500;
+  color: #333;
+}
